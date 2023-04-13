@@ -1,0 +1,135 @@
+<div>
+<div class="box">
+
+    <h1>CONVERSOR DE COMPRIMENTO</h1>
+
+    <div class="card1">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">CENTÍMETROS</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Informe o valor:</h6>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Valor</span>
+            <input type="number" [(ngModel)]="valor1" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+          <h6 class="card-subtitle mb-2 text-muted">Selecione a conversão:</h6>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked (click)="CM_M()">
+            <label class="form-check-label" for="flexRadioDefault1">
+              CM - M
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked (click)="M_CM()">
+            <label class="form-check-label" for="flexRadioDefault2">
+              M - CM
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked (click)="CM_KM()">
+            <label class="form-check-label" for="flexRadioDefault2">
+              CM - KM
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked (click)="KM_CM()">
+            <label class="form-check-label" for="flexRadioDefault2">
+              KM - CM
+            </label>
+          </div><br>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Resultado</span>
+            <input [value]="resultado1" [(ngModel)]="resultado1" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card2">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">METROS</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Informe o valor:</h6>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Valor</span>
+                <input type="number" [(ngModel)]="valor2" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+              <h6 class="card-subtitle mb-2 text-muted">Selecione a conversão:</h6>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked (click)="M_CM2()">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  M - CM
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked (click)="M_KM()">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  M - KM
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked (click)="CM_M2()">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  CM - M
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked (click)="KM_M()">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  KM - M
+                </label>
+              </div><br>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Resultado</span>
+                <input type="number" [(ngModel)]="resultado2" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+    <div class="card3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">QUILÔMETROS</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Informe o valor:</h6>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Valor</span>
+                <input type="number" [(ngModel)]="valor3" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+              <h6 class="card-subtitle mb-2 text-muted">Selecione a conversão:</h6>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked (click)="M_KM3()">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  M - KM
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked (click)="CM_KM3()">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  CM - KM
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked (click)="KM_M3()">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  KM - M
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked (click)="KM_CM3()">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  KM - CM
+                </label>
+              </div><br>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Resultado</span>
+                <input type="number" [(ngModel)]="resultado3" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+</div>
+</div>
